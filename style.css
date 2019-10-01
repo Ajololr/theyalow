@@ -1,9 +1,14 @@
 /* HEADER */
+.body {
+    margin: 0 auto;
+    max-width: 1300px;
+    width: 100%;;
+}
 
 .header {
     background-image: url("./assets/header-background.png");
     height: 566px;
-    width: 1300px;
+    width: 100%;
 }
 
 .symbol-background {
@@ -197,14 +202,42 @@
 
 .icon-area {
     background-image: url("assets/icon\ area\ back.png");
-    width: 1300px;
     height: 212px;
 }
 
+.icon-list {
+    margin: 0 10.69%;
+    display: flex;
+    height: 100%;
+}
 
+.icon-list li {
+    display: inline-block;
+    background-color: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: SegoeUI-Light, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 27.04912pt;
+    color: rgba(0, 0, 0, 255);
+    text-align: center;
+    width: 340px;
+    margin: auto auto 38px auto;
+}
+
+.icon-divider {
+    height: 100%;
+    width: 1px;
+    background-color: #dbdbdb
+}
+
+.scroll-area {
+    background: url("/assets/scroll-area.png");
+    height: 509px;
+}
 
 /* FOOTER */
 
 .footer {
-
+    background: url("/assets/dark-area.png");
+    height: 64px;
 }
