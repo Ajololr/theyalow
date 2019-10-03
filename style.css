@@ -1,243 +1,420 @@
+@font-face{
+  font-family: "Lucida Sans";
+  src: url(assets/fonts/lusida/Lucida\ Sans\ Italic.ttf) format('truetype');
+}
+
+@font-face{
+  font-family: "Segoe WP";
+  src: url(assets/fonts/Segoe/SegoeWP.ttf) format('truetype');
+}
+
+@font-face{
+  font-family: "Segoe UI";
+  src: url(assets/fonts/Segoe/Segoe\ UI.woff) format('woff');
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/Open\ sans/OpenSans-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/PT\ Sans/PTSans-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "PT Sans Narrow";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/PTSansNarrow/PTSansNarrow-Regular.ttf) format('truetype');
+}
+
 /* HEADER */
+
 .body {
-    margin: 0 auto;
-    max-width: 1300px;
-    width: 100%;;
+  margin: 0 auto;
+  max-width: 1300px;
+  width: 100%;;
 }
 
 .header {
-    background-image: url("./assets/header-background.png");
-    height: 566px;
-    width: 100%;
+  background-image: url("./assets/header-background.png");
+  height: 566px;
+  width: 100%;
 }
 
 .symbol-background {
-    position: absolute;
-    width: 79px;
-    height: 79px;
-    top: 30px;
-    left: 142px;
-    opacity: 0.5;
+  position: absolute;
+  width: 79px;
+  height: 79px;
+  top: 30px;
+  left: 142px;
+  opacity: 0.5;
 }
 
 .symbol-foreground {
-    position: absolute;
-    width: 83px;
-    height: 83px;
-    border-radius: 13px;
-    top: 28px;
-    left: 140px;
+  position: absolute;
+  width: 83px;
+  height: 83px;
+  border-radius: 13px;
+  top: 28px;
+  left: 140px;
 }
 
 .logo {
-    position: absolute;
-    left: 232px;
-    top: 60px;  
-    font-size: 41px;
-    letter-spacing: 0px;
-    color: #ffffff;
-    font-family: "Lucida Sans";
-    font-style: italic;
-    text-align: center;
-    text-transform: uppercase;
+  position: absolute;
+  left: 232px;
+  top: 60px;  
+  font-size: 41px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-family: "Lucida Sans";
+  font-style: italic;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .first {
-    position: absolute;
-    width: 453px;
-    height: 41px;
-    top: 63px;
-    left: 699px;
-    opacity: 0.27;
-    background-color: #f5c506;
+  position: absolute;
+  width: 453px;
+  height: 41px;
+  top: 63px;
+  left: 699px;
+  opacity: 0.27;
+  background-color: #f5c506;
 }
 
 .second {
-    position: absolute;
-    width: 453px;
-    height: 41px;
-    top: 66px;
-    left: 703px;
-    opacity: 0.27;
-    background-color: #f5c506;
+  position: absolute;
+  width: 453px;
+  height: 41px;
+  top: 66px;
+  left: 703px;
+  opacity: 0.27;
+  background-color: #f5c506;
 }
 
 .navigation-list {
-    display: flex;
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    top: 71px;
-    left: 707px;
-    width: 453px;
-    height: 41px;
+  display: flex;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 71px;
+  left: 707px;
+  width: 453px;
+  height: 41px;
 }
 
 .divider {
-    background-color: #dcb105;
-    width: 1px;
-    height: 40px;
-    display: inline-block;
+  background-color: #dcb105;
+  width: 1px;
+  height: 40px;
+  display: inline-block;
 }
 
 .navigation-list li{
-    display: inline-block;
-    width: 151px;
-    height: 41px;
-    font-size: 17px;
-    letter-spacing: 0px;
-    color: #9b7d08;
-    font-family: "Segoe WP";
-    text-align: center;
-    background-color: #f5c506;
-    text-transform: uppercase;
-    text-decoration: none;
-    line-height: 41px;
+  display: inline-block;
+  width: 151px;
+  height: 41px;
+  font-size: 17px;
+  letter-spacing: 0px;
+  color: #9b7d08;
+  font-family: "Segoe WP";
+  text-align: center;
+  background-color: #f5c506;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 41px;
 }
 
 .about-us-img,
 .services-img,
 .contact-us-img {
-    position: relative;
-    top: 3px;
+  position: relative;
+  top: 3px;
 }
 
 .video {
-    position: absolute;
-    top: 168px;
-    left: 150px;
-    height: 327px;
-    width: 549px;
-    background-image: url("assets/Video.png")
+  position: absolute;
+  top: 168px;
+  left: 150px;
+  height: 327px;
+  width: 549px;
+  background-image: url("assets/Video.png")
 }
 
 .big-button {
-    position: absolute;
-    top: 130px;
-    left: 241px; 
+  position: absolute;
+  top: 130px;
+  left: 241px; 
 }
 
 .big-arrow {
-    position: absolute;
-    top: 17px;
-    left: 27px; 
+  position: absolute;
+  top: 17px;
+  left: 27px; 
 }
 
 .small-button {
-    position: absolute;
-    top: 278px;
-    left: 29px; 
+  position: absolute;
+  top: 278px;
+  left: 29px; 
 }
 
 .small-arrow {
-    position: absolute;
-    top: 5px;
-    left: 10px;
+  position: absolute;
+  top: 5px;
+  left: 10px;
 }
 
 .watched {
-    position: absolute;
-    top: 286px;
-    left: 80px; 
-    height: 12px;
-    width: 404px;
+  position: absolute;
+  top: 286px;
+  left: 80px; 
+  height: 12px;
+  width: 404px;
 }
 
 .watched-length {
-    position: absolute;
-    top: 0px;
-    left: 0px; 
+  position: absolute;
+  top: 0px;
+  left: 0px; 
 }
 
 .sound {    
-    position: absolute;
-    top: 284px;
-    left: 515px;
+  position: absolute;
+  top: 284px;
+  left: 515px;
 }
 
 .h1-header {
-    position: absolute;
-    top: 258px;
-    left: 750px;
-    font-size: 63px;
-    letter-spacing: 1px;
-    color: #ffffff;
-    font-family: "Asap";
-    font-weight: 400;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0 0;
+  position: absolute;
+  top: 258px;
+  left: 750px;
+  font-size: 63px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-family: "Asap";
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0;
 }
 
 .color-text {
-    color: #f5c506;
+  color: #f5c506;
 }
 
 .button-left{
-    position: relative;
-    top: 300px;
-    float: left;
+  position: relative;
+  top: 300px;
+  float: left;
 }
 
 .button-right{
-    position: relative;
-    top: 300px;
-    float: right;
+  position: relative;
+  top: 300px;
+  float: right;
 }
 
 .button-left-arrow {
-    position: absolute;
-    top: 19px;
-    left: 8px;
-
+  position: absolute;
+  top: 19px;
+  left: 8px;
 }
 
 .button-right-arrow {
-    position: absolute;   
-    top: 18px;
-    left: 11px;
+  position: absolute;   
+  top: 18px;
+  left: 11px;
 }
 
 /* MAIN */
 
 .icon-area {
-    background-image: url("assets/icon\ area\ back.png");
-    height: 212px;
+  background-image: url("assets/icon\ area\ back.png");
+  height: 212px;
 }
 
 .icon-list {
-    margin: 0 10.69%;
-    display: flex;
-    height: 100%;
+  margin: 0 10.69%;
+  display: flex;
+  height: 100%;
 }
 
 .icon-list li {
-    display: inline-block;
-    background-color: none;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: SegoeUI-Light, AdobeInvisFont, MyriadPro-Regular;
-    font-size: 27.04912pt;
-    color: rgba(0, 0, 0, 255);
-    text-align: center;
-    width: 340px;
-    margin: auto auto 38px auto;
+  display: inline-block;
+  background-color: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Segoe UI";
+  font-size: 27.04912pt;
+  color: rgba(0, 0, 0, 255);
+  text-align: center;
+  width: 340px;
+  margin: auto auto 38px auto;
 }
 
 .icon-divider {
-    height: 100%;
-    width: 1px;
-    background-color: #dbdbdb
+  height: 100%;
+  width: 1px;
+  background-color: #dbdbdb
 }
 
 .scroll-area {
-    background: url("/assets/scroll-area.png");
-    height: 509px;
+  background: url("/assets/scroll-area.png");
+  height: 509px;
 }
+
+.span-text {
+  display: inline-block;
+  margin-top: 8.25%;
+  margin-left: 11%;
+  font-family: "PT Sans";
+  font-size: 37.04912pt;
+  color: rgba(255, 255, 255, 255);
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 37px;
+}
+
+.text-div {
+  display: inline-block;
+  height: 233px;
+  width: 341px;
+  background-color: #ec9e03;
+  margin: 0 0 0 139px;
+}
+
+.p {
+  position: absolute;
+  margin: 25px 0 0 31px;
+  width: 272px;
+  height: 174px;
+  font-size: 29px;
+  letter-spacing: 0px;
+  line-height: 38px;
+  color: #ffffff;
+  font-family: "Segoe WP";
+  font-weight: 300;
+}
+
+.second-video {
+  display: inline-block;
+  width: 315px;
+  height: 232px;
+  margin: 40px 0 0 0;
+}
+
+.dark-area {
+  background: url("assets/dark-area.png");
+  height: 499px;
+}
+
+.yellow-span {
+  display: inline-block;
+  margin: 48px 0 0 27.15%;
+  font-size: 43px;
+  letter-spacing: 0px;
+  color: #f5c506;
+  font-family: "PT Sans";
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.free-span {
+  position: absolute;
+  margin: 14px 0 0 138px;
+  height: 116px;
+  width: 116px;
+  z-index: 1;
+  font-size: 19px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-family: "PT Sans Narrow";
+  font-weight: 700;
+  text-align: center;
+}
+
+.ellipse {
+  position: absolute;
+  margin: 14px 0 0 138px;
+}
+
+.comp {
+  margin: 57px 0 0 12.15%;
+}
+
+.tablet {
+  margin: 0 0 40px 24px;
+}
+
+.tlf {
+  margin: 0 0 40px 25px;
+}
+
+.dark-list {
+  display: inline-block;
+  list-style: none;
+  list-style-image: url("assets/dot.png");
+  margin: 0 0 0 114px;
+}
+
+.dark-list li {
+  font-size: 22px;
+  letter-spacing: 0px;
+  color: #a9a9a7;
+  font-family: "Open Sans";
+  font-weight: 400;
+  width: 369px;
+  height: 45px;
+  font-size: 22px;
+  letter-spacing: 0px;
+  color: #a9a9a7;
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+.dark-list li:nth-child(2) {
+  width: 345px;
+  height: 49px;
+  font-size: 22px;
+  letter-spacing: 0px;
+  color: #a9a9a7;
+  font-family: "Open Sans";
+  font-weight: 400;
+  margin-bottom: 17px;
+}
+
 
 /* FOOTER */
 
 .footer {
-    background: url("/assets/dark-area.png");
-    height: 64px;
+  background: url("/assets/footer.png");
+  height: 64px;
+  box-shadow: -0.105px -2.998px 5px rgba(0,0,0,0.75);
+  display: flex;
+}
+
+.footer-logo {
+  margin: 6px 0 0 140px;
+}
+
+.footer span {
+  font-size: 29px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-family: "Lucida Sans";
+  font-style: italic;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 23px 0 0 9px;
 }
