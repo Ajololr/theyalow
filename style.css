@@ -302,7 +302,7 @@
   height: 133px;
 }
 
-.img-container span {
+.number {
   position: absolute;
   margin-top: 20px;
   margin-left: 286px;
@@ -334,6 +334,10 @@
 
 .text-div__plus-btn-second:hover {
   opacity: 1;
+}
+
+.messages-wrapper {
+  display: none;
 }
 
 .date-container {
@@ -626,9 +630,241 @@
     margin: auto auto 33px auto;
   }
   
+  .icon-list li img {
+    height: 69px;
+  }
+  
   .icon-divider {
+    display: none;
+  }
+
+  .scroll-area {
+    background: #FFF;
+    height: 485px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .span-text {
+    display: none;
+  }
+  
+  .text-div {
+    display: inline-block;
+    height: 232px;
+    width: 299px;
+    background-color: #ec9e03;
+    margin: 11px 9px 9px 9px;
+  }
+  
+  .p {
+    position: absolute;
+    margin: 22px 0 0 35px;
+    width: 272px;
+    height: 174px;
+    font-size: 23px;
+    letter-spacing: 0px;
+    line-height: 38px;
+    color: #ffffff;
+    font-family: "Segoe WP";
+    font-weight: 300;
+  }
+  
+  .second-video {
+    display: inline-block;
+    width: 315px;
+    height: 232px;
+    margin: 11px 0 0 0;
+  }
+  
+  .img-container {
+    display: block;
+    width: 100%;
+    height: 233px;
+    background-color: #f5c507;
+    margin: 0;
+  }
+  
+  .twitter {
+    position: absolute;
+    margin-top: 59px;
+    margin-left: 85px;
+    width: 159px;
+    height: 133px;
+  }
+
+  .messages-wrapper {
+    float: right;
+    width: 323px;
     height: 100%;
-    width: 1px;
-    background-color: #dbdbdb
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .messages-wrapper__twit {
+    background-image: url(assets/message.png);
+    opacity: 0.7;
+    width: 284px;
+    height: 42px;
+  }
+
+  .messages-wrapper__twit:first-of-type {
+    opacity: 1;
+  }
+  
+  .messages-wrapper__twit_message, .messages-wrapper__twit_author {
+    display: inline;
+    font-size: 13px;
+    letter-spacing: 0px;
+    color: #8f8e8e;
+    font-family: "Arial";
+    margin-left: 27px;
+  }
+
+  .messages-wrapper__form {
+    margin-left: 13px;
+  }
+
+  .messages-wrapper__form_text-input {   
+    box-sizing: border-box; 
+    width: 201px;
+    height: 29px;
+    border-radius: 10px 0 0 10px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0,0,0,0.15);
+  }
+
+  .messages-wrapper__form_button {
+    position: relative;
+    left: -5px;
+    top: 1px;
+    width: 69px;
+    height: 29px;
+    background-color: #db9a18;
+    border-radius: 0 10px 10px 0;
+    border: 1px solid rgba(0,0,0,0.15);
+    font-size: 15px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "Arial";
+  }
+
+  .number {
+    display: none;
+  }
+  
+  .text-div__plus-btn {
+    position: absolute;
+    margin-top: 204px;
+    margin-left: 277px;
+    opacity: 0.7;
+  }
+  
+  .text-div__plus-btn-second {
+    display: none;
+  }
+  
+  .date-container {
+    display: none;
+  }
+  
+  .slider {
+    display: none;
+  }
+  
+  .dark-area {
+    background: #474747;
+    height: 466px;
+  }
+  
+  .yellow-span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    top: 43px;
+    font-size: 39px;
+    letter-spacing: 0px;
+    color: #f5c506;
+    font-family: "Open Sans";
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  
+  .free-span {
+    position: absolute;
+    margin: 95px 0 0 34px;
+    height: 14px;
+    width: 105px;
+    line-height: 14px;
+    z-index: 1;
+    font-size: 19px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "PT Sans Narrow";
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .ellipse {
+    position: absolute;
+    margin: 42px 0 0 27px;
+  }
+  
+  .comp {
+    margin: 83px 0 0 57px;
+  }
+  
+  .tablet {
+    margin: 0 0 40px 24px;
+  }
+  
+  .tlf {
+    margin: 0 0 40px 25px;
+  }
+  
+  .dark-list {
+    display: none;
+  }
+  
+  .dark-list li:nth-child(2) {
+    width: 345px;
+    height: 49px;
+    font-size: 22px;
+    letter-spacing: 0px;
+    color: #a9a9a7;
+    font-family: "Open Sans";
+    font-weight: 400;
+    margin-bottom: 17px;
+  }
+  
+  /* FOOTER */
+  
+  .footer {
+    background-color: #4c4c4c;
+    height: 40px;
+    box-shadow: -0.105px -2.998px 5px rgba(0,0,0,0.75);
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-logo {
+    margin: 0 0 0 66px;
+    width: 31px;
+    height: 31px;
+  }
+  
+  .footer span {
+    font-size: 17px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "Lucida Sans";
+    font-style: italic;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 0 11px;
   }
 }
