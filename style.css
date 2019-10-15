@@ -480,3 +480,155 @@
   text-transform: uppercase;
   margin: 23px 0 0 9px;
 }
+
+@media screen and (max-width: 640px){
+  .header {
+    background-image: none;
+    background-color: #4E4E4E;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .symbol-background {
+    position: static;
+    width: 39px;
+    height: 38px;
+    margin: 11px 0 0 12px;
+    opacity: 0.5;
+  }
+  
+  .symbol-foreground {
+    width: 43px;
+    height: 43px;
+    top: 9px;
+    left: 10px;
+  }
+  
+  .logo {
+    position: static;
+    margin: auto 13px auto 12px;
+    font-size: 20px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "Lucida Sans";
+    font-style: italic;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .first {
+    display: none;
+  }
+  
+  .second {
+    display: none;
+  }
+  
+  .navigation-list {
+    position: static;
+    display: flex;
+    width: 455px;
+    height: 63px;
+  }
+  
+  .divider {
+    background-color: #dcb105;
+    width: 1px;
+    height: 63px;
+    display: inline-block;
+  }
+  
+  .navigation-list li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.3%;
+    height: 67px;
+    font-size: 19px;
+    letter-spacing: 0px;
+    color: #9b7d08;
+    font-family: "Segoe WP";
+    text-align: center;
+    background-color: #f5c506;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 41px;
+  }
+  
+  .navigation-list li:hover {
+    color: #fff;
+  }
+  
+  .about-us-img,
+  .services-img,
+  .contact-us-img {
+    position: relative;
+    top: 3px;
+  }
+  
+  .video {
+    position: static;
+    height: 327px;
+    width: 640px;
+    background-image: url("assets/Video.png")
+  }
+  
+  .h1-header {
+    display: none;
+  }
+  
+  .button-left{
+    display: none;
+  }
+  
+  .button-right{
+    display: none;
+  }
+  
+  .button-left-arrow {
+    display: none;
+  }
+  
+  .button-right-arrow {
+    display: none;
+  }
+  
+  /* MAIN */
+
+  .icon-area {
+    background-image: url(assets/icon\ area\ back.png);
+    position: relative;
+    height: 174px;
+    box-shadow: 0px 0px 5px;
+  }
+  
+  .icon-list {
+    margin: 0;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .icon-list li {
+    display: inline-block;
+    background-color: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Segoe UI";
+    font-size: 23px;
+    color: rgba(0, 0, 0, 255);
+    text-align: center;
+    width: 33.3%;
+    margin: auto auto 33px auto;
+  }
+  
+  .icon-divider {
+    height: 100%;
+    width: 1px;
+    background-color: #dbdbdb
+  }
+}
