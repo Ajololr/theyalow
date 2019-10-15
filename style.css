@@ -37,15 +37,16 @@
   src: url(assets/fonts/PTSansNarrow/PTSansNarrow-Regular.ttf) format('truetype');
 }
 
-/* HEADER */
-
 .body {
   margin: 0 auto;
   max-width: 1300px;
   width: 100%;;
 }
 
+/* HEADER */
+
 .header {
+  position: relative;
   background-image: url("./assets/header-background.png");
   height: 566px;
   width: 100%;
@@ -135,6 +136,10 @@
   line-height: 41px;
 }
 
+.navigation-list li:hover {
+  color: #fff;
+}
+
 .about-us-img,
 .services-img,
 .contact-us-img {
@@ -149,50 +154,6 @@
   height: 327px;
   width: 549px;
   background-image: url("assets/Video.png")
-}
-
-.big-button {
-  position: absolute;
-  top: 130px;
-  left: 241px; 
-}
-
-.big-arrow {
-  position: absolute;
-  top: 17px;
-  left: 27px; 
-}
-
-.small-button {
-  position: absolute;
-  top: 278px;
-  left: 29px; 
-}
-
-.small-arrow {
-  position: absolute;
-  top: 5px;
-  left: 10px;
-}
-
-.watched {
-  position: absolute;
-  top: 286px;
-  left: 80px; 
-  height: 12px;
-  width: 404px;
-}
-
-.watched-length {
-  position: absolute;
-  top: 0px;
-  left: 0px; 
-}
-
-.sound {    
-  position: absolute;
-  top: 284px;
-  left: 515px;
 }
 
 .h1-header {
@@ -225,6 +186,11 @@
   float: right;
 }
 
+.button-left-img:hover,
+.button-right-img:hover {
+  opacity: 0.7;
+}
+
 .button-left-arrow {
   position: absolute;
   top: 19px;
@@ -240,14 +206,18 @@
 /* MAIN */
 
 .icon-area {
-  background-image: url("assets/icon\ area\ back.png");
+  background-image: url(assets/icon\ area\ back.png);
+  position: relative;
   height: 212px;
+  box-shadow: 0px 0px 5px;
 }
 
 .icon-list {
   margin: 0 10.69%;
   display: flex;
   height: 100%;
+  width: 1019px;
+  padding: 0;
 }
 
 .icon-list li {
@@ -259,7 +229,7 @@
   font-size: 27.04912pt;
   color: rgba(0, 0, 0, 255);
   text-align: center;
-  width: 340px;
+  width: auto;
   margin: auto auto 38px auto;
 }
 
@@ -270,13 +240,15 @@
 }
 
 .scroll-area {
-  background: url("/assets/scroll-area.png");
+  background: url(assets/scroll-area.png);
   height: 509px;
 }
 
 .span-text {
   display: inline-block;
-  margin-top: 8.25%;
+  width: 70%;
+  text-align: left;
+  margin-top: 42px;
   margin-left: 11%;
   font-family: "PT Sans";
   font-size: 37.04912pt;
@@ -311,11 +283,101 @@
   display: inline-block;
   width: 315px;
   height: 232px;
-  margin: 40px 0 0 0;
+  margin: 40px 0 0 -4px;
+}
+
+.img-container {
+  display: inline-block;
+  width: 329px;
+  height: 233px;
+  background-color: #ec9e03;
+  margin-left: 34px;
+}
+
+.twitter {
+  position: absolute;
+  margin-top: 59px;
+  margin-left: 83px;
+  width: 163px;
+  height: 133px;
+}
+
+.img-container span {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 286px;
+  width: 24px;
+  height: 18px;
+  font-size: 18pt;
+  color: rgba(255, 255, 255, 255);
+  line-height: 25px;
+  font-family: "Segoe WP";
+}
+
+.text-div__plus-btn {
+  position: absolute;
+  margin-top: 209px;
+  margin-left: 316px;
+  opacity: 0.7;
+}
+
+.text-div__plus-btn-second {
+  position: absolute;
+  margin-top: 209px;
+  margin-left: 309px;
+  opacity: 0.7;
+}
+
+.text-div__plus-btn:hover {
+  opacity: 1;
+}
+
+.text-div__plus-btn-second:hover {
+  opacity: 1;
+}
+
+.date-container {
+  display: block;
+  width: 113px;
+  height: 86px;
+  background-color: #ddb101;
+  margin-left: 139px; 
+  margin-top: -6px;
+}
+
+.date-container__value {
+  position: absolute;
+  margin-top: 15px;
+  width: 113px;
+  text-align: center;
+  font-size: 51px;
+  letter-spacing: 1px;
+  line-height: 38px;
+  color: #ffffff;
+  font-family: "Segoe UI";
+  font-weight: bold;
+}
+
+.date-container__month {
+  position: absolute;
+  margin-top: 62px;
+  width: 113px;
+  text-align: center;
+  text-transform: uppercase; 
+  font-size: 21px;
+  letter-spacing: 0px;
+  line-height: 19px;
+  color: #b26529;
+  font-family: "Segoe UI";
+}
+
+.slider {
+  margin-left: 15%;
+  margin-top: 2.9%;
 }
 
 .dark-area {
-  background: url("assets/dark-area.png");
+  background: url("assets/dark\ area.png");
   height: 499px;
 }
 
@@ -332,9 +394,10 @@
 
 .free-span {
   position: absolute;
-  margin: 14px 0 0 138px;
-  height: 116px;
-  width: 116px;
+  margin: 67px 0 0 145px;
+  height: 14px;
+  width: 105px;
+  line-height: 14px;
   z-index: 1;
   font-size: 19px;
   letter-spacing: 0px;
@@ -394,11 +457,10 @@
   margin-bottom: 17px;
 }
 
-
 /* FOOTER */
 
 .footer {
-  background: url("/assets/footer.png");
+  background-color: #4c4c4c;
   height: 64px;
   box-shadow: -0.105px -2.998px 5px rgba(0,0,0,0.75);
   display: flex;
